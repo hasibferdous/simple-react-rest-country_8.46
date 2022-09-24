@@ -1,15 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
 import { useEffect, useState } from 'react';
+import Countries from './components/Country/Country';
+import Person from './components/Person/Person';
+import Header from './components/Header/Header';
 
 function App() {
   return (
     <div className="App">
-        <LoadCountries></LoadCountries>
+        {/* <LoadCountries></LoadCountries> */}
+        
+        <Countries></Countries>
+        <Header></Header>
+        <Person></Person>
+
     </div>
   );
 }
-function LoadCountries(){
+/* function LoadCountries(){
   //1. declaring state to save loaded data
   const [countries, setCountries] = useState([]);
   //2. writing useEffect()
@@ -38,6 +46,6 @@ function Country(props){
       <h4>Population:{props.population}</h4>
     </div>
   )
-}
+} */
 
 export default App;
