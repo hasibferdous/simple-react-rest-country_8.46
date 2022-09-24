@@ -1,9 +1,10 @@
-import logo from './logo.svg';
+
 import './App.css';
 import { useEffect, useState } from 'react';
 import Countries from './components/Country/Country';
-import Person from './components/Person/Person';
-import Header from './components/Header/Header';
+
+// import Person from './components/Person/Person';
+// import Header from './components/Header/Header';
 
 function App() {
   return (
@@ -11,8 +12,16 @@ function App() {
         {/* <LoadCountries></LoadCountries> */}
         
         <Countries></Countries>
+        {/* 
         <Header></Header>
-        <Person></Person>
+        <Person></Person> */}
+
+
+
+
+
+
+
 
     </div>
   );
@@ -30,7 +39,7 @@ function App() {
   } , [])
   return (
     <div>
-      <h1>Visting Every Country of The world !!</h1>
+      <h1>Visiting Every Country of The world !!</h1>
       <h3>Available Countries: {countries.length}</h3>
       {
         countries.map(country => <Country name={country.name.common} population={country.population}></Country>)
