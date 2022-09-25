@@ -1,7 +1,7 @@
 
 import './App.css';
 import { useEffect, useState } from 'react';
-import Countries from './components/Country/Country';
+import Countries from './components/Countries/Countries';
 
 // import Person from './components/Person/Person';
 // import Header from './components/Header/Header';

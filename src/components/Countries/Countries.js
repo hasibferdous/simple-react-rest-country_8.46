@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-
+import Country from './Country/Country';
 const Countries = () => {
 
   //1. declaring state to save loaded data
@@ -13,28 +13,20 @@ const Countries = () => {
 
   } , [])
 
-
-
     return (
         <div>
             <h2>Hello from Countries !</h2>
             <h3>Available Countries: {countries.length}</h3>
       {
-        countries.map(country => <Country name={country.name.common} population={country.population}></Country>)
+        countries.map(country => <Country 
+          country={country}
+          // name={country.name.common} 
+          // area={country.area} 
+          // population={country.population}>
+          ></Country>)
       }
         </div>
     );
 };
-
-function Country(props){
-    return (
-      <div>
-        <h2>Name:{props.name}</h2>
-        <h4>Population:{props.population}</h4>
-      </div>
-    )
-  } 
-
-
 
 export default Countries;
