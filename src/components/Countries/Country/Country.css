@@ -1,3 +1,10 @@
+
 .country {
-    background-color: aqua;
+    background-color: papayawhip;
+    margin: 20px;
+    padding: 10px;
+}
+
+.country img {
+    width: 150px;
 }
